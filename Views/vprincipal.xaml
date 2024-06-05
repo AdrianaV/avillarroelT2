@@ -13,7 +13,7 @@
             TextColor="Red" />
     </VerticalStackLayout>
 
-    <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+    <Picker x:Name="pkEstudiantes" Title="Estudiantes1">
         <Picker.Items>
             <x:String>Adriana Villarroel</x:String>
             <x:String>Bladimir Punguil</x:String>
