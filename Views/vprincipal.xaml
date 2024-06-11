@@ -11,53 +11,67 @@
             FontSize="20"
             VerticalTextAlignment="Center" 
             TextColor="Red" />
+
+        <Picker x:Name="pkEstudiantes" Title="Estudiantes: ">
+            <Picker.Items>
+                <x:String>Adriana Villarroel</x:String>
+                <x:String>Bladimir Punguil</x:String>
+                <x:String>Jefferson Pillajo</x:String>
+                <x:String>Mario Valencia</x:String>
+                <x:String>Mauricio Toapanta</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label 
+            Text="Parcial 1"
+            FontSize="14"
+            VerticalTextAlignment="Start" />
+        <Label 
+            Text="Nota Seguimiento 1"
+            FontSize="12"
+            VerticalTextAlignment="Start" />
+        <Entry x:Name="txtDato11"
+           Placeholder="Ingrese nota seguimiento 1: "
+           Keyboard="Numeric"
+           MaxLength="4"/>
+        <Label 
+            Text="Examen 1"
+            FontSize="12"
+            VerticalTextAlignment="Start" />
+        <Entry x:Name="txtDato12"
+           Placeholder="Ingrese nota examen 1: "
+           Keyboard="Numeric"
+           MaxLength="4"/>
+
+        <Label 
+            Text="Parcial 2"
+            FontSize="14"
+            VerticalTextAlignment="Start" />
+        <Label 
+            Text="Nota Seguimiento 1"
+            FontSize="12"
+            VerticalTextAlignment="Start" />
+        <Entry x:Name="txtDato21"
+               Placeholder="Ingrese nota seguimiento 2: "
+               Keyboard="Numeric"
+               MaxLength="4"/>
+        <Label 
+            Text="Examen 2"
+            FontSize="12"
+            VerticalTextAlignment="Start" />
+        <Entry x:Name="txtDato22"
+               Placeholder="Ingrese nota examen 2: "
+               Keyboard="Numeric"
+               MaxLength="4"/>
+
+        <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
+        </DatePicker>
+
+        <Button x:Name="btnCalcular"
+            Text="Calcular"
+            Clicked="btnCalcular_Clicked"/>
     </VerticalStackLayout>
-
-    <Picker x:Name="pkEstudiantes" Title="Estudiantes1">
-        <Picker.Items>
-            <x:String>Adriana Villarroel</x:String>
-            <x:String>Bladimir Punguil</x:String>
-            <x:String>Jefferson Pillajo</x:String>
-        </Picker.Items>
-    </Picker>
-
-    <Label 
-        Text="Parcial 1"
-        FontSize="12"
-        VerticalTextAlignment="Start" />
-
-    <Entry x:Name="txtDato1"
-       Placeholder="Ingrese nota seguimiento:"
-       Keyboard="Numeric"
-       MaxLength="4"/>
-
-    <Entry x:Name="txtDato2"
-       Placeholder="Ingrese nota examen"
-       Keyboard="Numeric"
-       MaxLength="4"/>
-
-    <Label 
-        Text="Parcial 2"
-        FontSize="12"
-        VerticalTextAlignment="Start" />
-
-    <Entry x:Name="txtDato3"
-           Placeholder="Ingrese nota seguimiento 2"
-           Keyboard="Numeric"
-           MaxLength="4"/>
-
-    <Entry x:Name="txtDato4"
-           Placeholder="Ingrese nota examen 2"
-           Keyboard="Numeric"
-           MaxLength="4"/>
-
-    <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
-
-    </DatePicker>
-
-    <Button x:Name="btnCalcular"
-        Text="Calcular"
-        Clicked="btnCalcular_Clicked"/>
-
-
 </ContentPage>
+    
+    
+    
