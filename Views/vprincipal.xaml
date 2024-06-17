@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avillarroelT2.Views.vprincipal"
-             Title="vprincipal">
+             Title="Calificaciones">
     <VerticalStackLayout
         Spacing="25"
         Padding="20">
+
+        <Label x:Name="lbl_nombre"
+               HorizontalOptions="End"
+               FontSize="15"
+               TextColor="Red"/>
+        
         <Label 
             Text="SEMANA DOS: SISTEMA DE CALIFICACIONES"
             FontSize="20"
@@ -22,50 +28,97 @@
             </Picker.Items>
         </Picker>
 
-        <Label 
-            Text="Parcial 1"
-            FontSize="14"
-            VerticalTextAlignment="Start" />
-        <Label 
-            Text="Nota Seguimiento 1"
-            FontSize="12"
-            VerticalTextAlignment="Start" />
-        <Entry x:Name="txtDato11"
-           Placeholder="Ingrese nota seguimiento 1: "
-           Keyboard="Numeric"
-           MaxLength="4"/>
-        <Label 
-            Text="Examen 1"
-            FontSize="12"
-            VerticalTextAlignment="Start" />
-        <Entry x:Name="txtDato12"
-           Placeholder="Ingrese nota examen 1: "
-           Keyboard="Numeric"
-           MaxLength="4"/>
 
-        <Label 
-            Text="Parcial 2"
-            FontSize="14"
-            VerticalTextAlignment="Start" />
-        <Label 
-            Text="Nota Seguimiento 1"
-            FontSize="12"
-            VerticalTextAlignment="Start" />
-        <Entry x:Name="txtDato21"
-               Placeholder="Ingrese nota seguimiento 2: "
-               Keyboard="Numeric"
-               MaxLength="4"/>
-        <Label 
-            Text="Examen 2"
-            FontSize="12"
-            VerticalTextAlignment="Start" />
-        <Entry x:Name="txtDato22"
-               Placeholder="Ingrese nota examen 2: "
-               Keyboard="Numeric"
-               MaxLength="4"/>
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
-        </DatePicker>
+            <Label 
+                Text="Parcial 1"
+                FontSize="14"
+                VerticalTextAlignment="Start" 
+                Grid.Row="0"
+                Grid.Column="0"/>
+
+            <Label 
+                Text="Nota Seguimiento 1: "
+                FontSize="12"
+                VerticalTextAlignment="Start" 
+                Grid.Row="1"
+                Grid.Column="0"/>
+            <Entry x:Name="txtDato11"
+                   Placeholder="Ingrese nota seguimiento 1"
+                   Keyboard="Numeric"
+                   MaxLength="4"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+            <Label 
+                Text="Examen 1: "
+                FontSize="12"
+                VerticalTextAlignment="Start" 
+                Grid.Row="2"
+                Grid.Column="0"/>
+            <Entry x:Name="txtDato12"
+                   Placeholder="Ingrese nota examen 1"
+                   Keyboard="Numeric"
+                   MaxLength="4"
+                   Grid.Row="2"
+                   Grid.Column="1"/>
+
+            <Label 
+                Text="Parcial 2"
+                FontSize="14"
+                VerticalTextAlignment="Start"
+                Grid.Row="3"
+                Grid.Column="0" />
+            <Label 
+                Text="Nota Seguimiento 2: "
+                FontSize="12"
+                VerticalTextAlignment="Start"
+                Grid.Row="4"
+                Grid.Column="0"/>
+            <Entry x:Name="txtDato21"
+                   Placeholder="Ingrese nota seguimiento 2"
+                   Keyboard="Numeric"
+                   MaxLength="4"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+            <Label 
+                Text="Examen 2: "
+                FontSize="12"
+                VerticalTextAlignment="Start" 
+                Grid.Row="5"
+                Grid.Column="0"/>
+            <Entry x:Name="txtDato22"
+                   Placeholder="Ingrese nota examen 2"
+                   Keyboard="Numeric"
+                   MaxLength="4"
+                   Grid.Row="5"
+                   Grid.Column="1"/>
+
+            <Label 
+                Text="Fecha: "
+                FontSize="12"
+                VerticalTextAlignment="Start" 
+                Grid.Row="6"
+                Grid.Column="0"/>
+            <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy"
+                Grid.Row="6"
+                Grid.Column="1">
+            </DatePicker>
+        </Grid>
+
 
         <Button x:Name="btnCalcular"
             Text="Calcular"

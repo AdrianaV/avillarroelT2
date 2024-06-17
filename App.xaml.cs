@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new Views.vprincipal();
+            MainPage = new NavigationPage(new Views.login());
         }
     }
 }

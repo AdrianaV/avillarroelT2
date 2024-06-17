@@ -2,10 +2,11 @@ namespace avillarroelT2.Views;
 
 public partial class vprincipal : ContentPage
 {
-	public vprincipal()
+	public vprincipal(string nombre)
 	{
 		InitializeComponent();
-	}
+        lbl_nombre.Text = nombre;
+    }
 
     private void btnCalcular_Clicked(object sender, EventArgs e)
     {
